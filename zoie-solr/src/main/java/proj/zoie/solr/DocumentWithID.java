@@ -1,8 +1,8 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import org.apache.lucene.document.Document;
 
-import proj.zoie.api.indexing.AbstractZoieIndexable;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexable;
 
 /**
  * This ZoieIndexable does not have store data.

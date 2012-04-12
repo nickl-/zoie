@@ -1,4 +1,4 @@
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,15 +17,15 @@ import org.apache.lucene.search.DocIdSet;
 import org.junit.After;
 import org.junit.Before;
 
-import proj.zoie.api.DocIDMapperFactory;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.api.impl.InRangeDocIDMapperFactory;
-import proj.zoie.api.indexing.IndexReaderDecorator;
-import proj.zoie.impl.indexing.SimpleReaderCache;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
-import proj.zoie.test.data.DataInterpreterForTests;
-import proj.zoie.test.data.InRangeDataInterpreterForTests;
+import com.linkedin.zoie.api.DocIDMapperFactory;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.impl.InRangeDocIDMapperFactory;
+import com.linkedin.zoie.api.indexing.IndexReaderDecorator;
+import com.linkedin.zoie.impl.indexing.SimpleReaderCache;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.test.data.DataInterpreterForTests;
+import com.linkedin.zoie.test.data.InRangeDataInterpreterForTests;
 
 
 public class ZoieTestCaseBase

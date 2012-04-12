@@ -1,7 +1,7 @@
 /**
  * 
  */
-package proj.zoie.test.data;
+package com.linkedin.zoie.test.data;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
@@ -9,9 +9,9 @@ import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Field.Index;
 import org.apache.lucene.document.Field.Store;
 
-import proj.zoie.api.indexing.ZoieIndexable;
-import proj.zoie.api.indexing.AbstractZoieIndexable;
-import proj.zoie.api.indexing.ZoieIndexableInterpreter;
+import com.linkedin.zoie.api.indexing.ZoieIndexable;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexable;
+import com.linkedin.zoie.api.indexing.ZoieIndexableInterpreter;
 
 /**
  * @author "Xiaoyang Gu<xgu@linkedin.com>"

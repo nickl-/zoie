@@ -1,4 +1,4 @@
-package proj.zoie.perf.indexing;
+package com.linkedin.zoie.perf.indexing;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,10 +9,10 @@ import java.nio.charset.Charset;
 
 import org.apache.log4j.Logger;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.impl.indexing.StreamDataProvider;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.perf.client.ZoiePerfVersion;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.impl.indexing.StreamDataProvider;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.perf.client.ZoiePerfVersion;
 
 public class LinedFileDataProvider extends StreamDataProvider<String> {
 

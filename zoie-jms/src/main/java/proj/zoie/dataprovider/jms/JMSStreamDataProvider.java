@@ -1,4 +1,4 @@
-package proj.zoie.dataprovider.jms;
+package com.linkedin.zoie.dataprovider.jms;
 
 import java.util.Comparator;
 
@@ -13,8 +13,8 @@ import javax.jms.TopicSubscriber;
 
 import org.apache.log4j.Logger;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.impl.indexing.StreamDataProvider;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.impl.indexing.StreamDataProvider;
 
 public class JMSStreamDataProvider<T> extends StreamDataProvider<T> {
 	

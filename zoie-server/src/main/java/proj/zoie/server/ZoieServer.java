@@ -1,4 +1,4 @@
-package proj.zoie.server;
+package com.linkedin.zoie.server;
 
 import java.io.File;
 import java.io.FileFilter;

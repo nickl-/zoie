@@ -1,4 +1,4 @@
-package proj.zoie.perf.tools;
+package com.linkedin.zoie.perf.tools;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +10,8 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.util.Version;
 
-import proj.zoie.api.DefaultDirectoryManager;
-import proj.zoie.api.DirectoryManager;
+import com.linkedin.zoie.api.DefaultDirectoryManager;
+import com.linkedin.zoie.api.DirectoryManager;
 
 public class IndexReplicator {
 

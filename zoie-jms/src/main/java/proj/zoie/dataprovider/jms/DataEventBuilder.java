@@ -1,9 +1,9 @@
-package proj.zoie.dataprovider.jms;
+package com.linkedin.zoie.dataprovider.jms;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
 
-import proj.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
 
 public interface DataEventBuilder<T> {
 

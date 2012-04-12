@@ -1,9 +1,9 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 
-import proj.zoie.api.indexing.AbstractZoieIndexableInterpreter;
-import proj.zoie.api.indexing.AbstractZoieIndexable;
-import proj.zoie.api.indexing.ZoieIndexable;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexableInterpreter;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexable;
+import com.linkedin.zoie.api.indexing.ZoieIndexable;
 
 public class NopInterpreter<V> extends AbstractZoieIndexableInterpreter<V>
 {

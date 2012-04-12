@@ -1,4 +1,4 @@
-package proj.zoie.example.service.impl;
+package com.linkedin.zoie.example.service.impl;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,13 +28,13 @@ import org.apache.lucene.search.highlight.Scorer;
 import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
 import org.apache.lucene.util.Version;
 
-import proj.zoie.api.IndexReaderFactory;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.service.api.SearchHit;
-import proj.zoie.service.api.SearchRequest;
-import proj.zoie.service.api.SearchResult;
-import proj.zoie.service.api.ZoieSearchService;
+import com.linkedin.zoie.api.IndexReaderFactory;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.service.api.SearchHit;
+import com.linkedin.zoie.service.api.SearchRequest;
+import com.linkedin.zoie.service.api.SearchResult;
+import com.linkedin.zoie.service.api.ZoieSearchService;
 
 public class ExampleZoieSearchServiceImpl<R extends IndexReader> implements ZoieSearchService {
 

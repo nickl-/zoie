@@ -1,4 +1,4 @@
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import java.nio.charset.Charset;
 
@@ -7,9 +7,9 @@ import junit.framework.Assert;
 import org.apache.lucene.store.RAMDirectory;
 import org.junit.Test;
 
-import proj.zoie.store.AbstractZoieStore;
-import proj.zoie.store.LuceneStore;
-import proj.zoie.store.ZoieStore;
+import com.linkedin.zoie.store.AbstractZoieStore;
+import com.linkedin.zoie.store.LuceneStore;
+import com.linkedin.zoie.store.ZoieStore;
 
 public class ZoieStoreTestCase {
 

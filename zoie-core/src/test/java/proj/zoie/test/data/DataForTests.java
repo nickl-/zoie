@@ -1,4 +1,4 @@
-package proj.zoie.test.data;
+package com.linkedin.zoie.test.data;
 
 public class DataForTests {
 	public static String[] testdata=new String[]{

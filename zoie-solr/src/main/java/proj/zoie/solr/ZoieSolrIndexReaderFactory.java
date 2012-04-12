@@ -1,4 +1,4 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.apache.lucene.store.Directory;
 import org.apache.solr.common.util.NamedList;
 import org.apache.solr.core.IndexReaderFactory;
 
-import proj.zoie.api.Zoie;
-import proj.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.Zoie;
+import com.linkedin.zoie.api.ZoieIndexReader;
 
 /**
  * @param <VALUE> the type for the data to be put in the associated Key-Value store.

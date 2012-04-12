@@ -1,4 +1,4 @@
-package proj.zoie.perf.client;
+package com.linkedin.zoie.perf.client;
 
 import it.unimi.dsi.fastutil.longs.LongArrayList;
 
@@ -11,7 +11,7 @@ import java.util.Random;
 
 import org.json.JSONObject;
 
-import proj.zoie.store.ZoieStore;
+import com.linkedin.zoie.store.ZoieStore;
 
 public class StoreQueryHandler implements QueryHandler<byte[]> {
 	

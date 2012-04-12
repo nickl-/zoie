@@ -1,4 +1,4 @@
-package proj.zoie.perf.client;
+package com.linkedin.zoie.perf.client;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,7 +18,7 @@ import org.apache.lucene.index.Term;
 import org.apache.lucene.index.TermEnum;
 import org.apache.lucene.store.FSDirectory;
 
-import proj.zoie.api.impl.util.PriorityQueue;
+import com.linkedin.zoie.api.impl.util.PriorityQueue;
 
 public class TermFileBuilder {
 

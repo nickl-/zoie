@@ -1,4 +1,4 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import java.io.File;
 import java.lang.management.ManagementFactory;
@@ -20,22 +20,22 @@ import org.apache.solr.core.SolrConfig;
 import org.apache.solr.core.SolrCore;
 
 
-import proj.zoie.api.DirectoryManager;
-import proj.zoie.api.DirectoryManager.DIRECTORY_MODE;
-import proj.zoie.api.DefaultDirectoryManager;
-import proj.zoie.api.Zoie;
-import proj.zoie.api.ZoieException;
-import proj.zoie.hourglass.impl.HourGlassScheduler;
-import proj.zoie.hourglass.impl.HourGlassScheduler.FREQUENCY;
-import proj.zoie.hourglass.impl.Hourglass;
-import proj.zoie.hourglass.impl.HourglassDirectoryManagerFactory;
-import proj.zoie.hourglass.mbean.HourglassAdmin;
-import proj.zoie.hourglass.mbean.HourglassAdminMBean;
-import proj.zoie.impl.indexing.DefaultIndexReaderDecorator;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
-import proj.zoie.mbean.ZoieSystemAdmin;
-import proj.zoie.mbean.ZoieSystemAdminMBean;
+import com.linkedin.zoie.api.DirectoryManager;
+import com.linkedin.zoie.api.DirectoryManager.DIRECTORY_MODE;
+import com.linkedin.zoie.api.DefaultDirectoryManager;
+import com.linkedin.zoie.api.Zoie;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.hourglass.impl.HourGlassScheduler;
+import com.linkedin.zoie.hourglass.impl.HourGlassScheduler.FREQUENCY;
+import com.linkedin.zoie.hourglass.impl.Hourglass;
+import com.linkedin.zoie.hourglass.impl.HourglassDirectoryManagerFactory;
+import com.linkedin.zoie.hourglass.mbean.HourglassAdmin;
+import com.linkedin.zoie.hourglass.mbean.HourglassAdminMBean;
+import com.linkedin.zoie.impl.indexing.DefaultIndexReaderDecorator;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.mbean.ZoieSystemAdmin;
+import com.linkedin.zoie.mbean.ZoieSystemAdminMBean;
 
 public class ZoieSystemHome {
 	private static Logger log = Logger.getLogger(ZoieSystemHome.class);

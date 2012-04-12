@@ -1,7 +1,7 @@
 /**
  *
  */
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -36,19 +36,19 @@ import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.junit.Test;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.api.indexing.IndexReaderDecorator;
-import proj.zoie.hourglass.api.HourglassIndexable;
-import proj.zoie.hourglass.api.HourglassIndexableInterpreter;
-import proj.zoie.hourglass.impl.HourGlassScheduler;
-import proj.zoie.hourglass.impl.Hourglass;
-import proj.zoie.hourglass.impl.HourglassDirectoryManagerFactory;
-import proj.zoie.hourglass.mbean.HourglassAdmin;
-import proj.zoie.impl.indexing.MemoryStreamDataProvider;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.indexing.IndexReaderDecorator;
+import com.linkedin.zoie.hourglass.api.HourglassIndexable;
+import com.linkedin.zoie.hourglass.api.HourglassIndexableInterpreter;
+import com.linkedin.zoie.hourglass.impl.HourGlassScheduler;
+import com.linkedin.zoie.hourglass.impl.Hourglass;
+import com.linkedin.zoie.hourglass.impl.HourglassDirectoryManagerFactory;
+import com.linkedin.zoie.hourglass.mbean.HourglassAdmin;
+import com.linkedin.zoie.impl.indexing.MemoryStreamDataProvider;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
 
 /**
  * @author "Xiaoyang Gu<xgu@linkedin.com>"

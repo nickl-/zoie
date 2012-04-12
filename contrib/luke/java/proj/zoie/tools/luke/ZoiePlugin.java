@@ -1,4 +1,4 @@
-package proj.zoie.tools.luke;
+package com.linkedin.zoie.tools.luke;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntList;
@@ -8,8 +8,8 @@ import java.io.IOException;
 import org.apache.lucene.index.IndexReader;
 import org.getopt.luke.LukePlugin;
 
-import proj.zoie.api.DocIDMapper;
-import proj.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.DocIDMapper;
+import com.linkedin.zoie.api.ZoieIndexReader;
 
 public class ZoiePlugin extends LukePlugin {
 	private ZoieIndexReader _zoieReader;

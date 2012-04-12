@@ -1,4 +1,4 @@
-package proj.zoie.perf.indexing;
+package com.linkedin.zoie.perf.indexing;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -6,10 +6,10 @@ import org.apache.lucene.document.Field.Index;
 import org.apache.lucene.document.Field.Store;
 import org.json.JSONObject;
 
-import proj.zoie.api.indexing.AbstractZoieIndexable;
-import proj.zoie.api.indexing.AbstractZoieIndexableInterpreter;
-import proj.zoie.api.indexing.ZoieIndexable;
-import proj.zoie.api.indexing.ZoieIndexable.IndexingReq;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexable;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexableInterpreter;
+import com.linkedin.zoie.api.indexing.ZoieIndexable;
+import com.linkedin.zoie.api.indexing.ZoieIndexable.IndexingReq;
 
 public class TweetInterpreter extends AbstractZoieIndexableInterpreter<String> {
 

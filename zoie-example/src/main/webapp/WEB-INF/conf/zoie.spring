@@ -6,11 +6,11 @@
 						http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	
-	<bean id="fileInterpreter" class="proj.zoie.impl.indexing.FileIndexableInterpreter" />
+	<bean id="fileInterpreter" class="com.linkedin.zoie.impl.indexing.FileIndexableInterpreter" />
 	
-	<bean id="versionComparator" class="proj.zoie.impl.indexing.ZoieConfig$DefaultVersionComparator" />
+	<bean id="versionComparator" class="com.linkedin.zoie.impl.indexing.ZoieConfig$DefaultVersionComparator" />
 	
-	<bean id="indexingSystem" class="proj.zoie.impl.indexing.SimpleZoieSystem" init-method="start" destroy-method="shutdown">
+	<bean id="indexingSystem" class="com.linkedin.zoie.impl.indexing.SimpleZoieSystem" init-method="start" destroy-method="shutdown">
 		<constructor-arg value="file:${index.dir}"/>
 		<constructor-arg ref="fileInterpreter" />
 		<constructor-arg value="1000" />
@@ -18,24 +18,24 @@
 		<constructor-arg ref="versionComparator" />
 	</bean>
 	
-	<bean id="zoie-system-mbean" class="proj.zoie.mbean.ZoieSystemAdmin">
+	<bean id="zoie-system-mbean" class="com.linkedin.zoie.mbean.ZoieSystemAdmin">
 		<constructor-arg ref="indexingSystem" />
 	</bean>
 	
-	<bean id="zoie-index-stat-mbean" class="proj.zoie.mbean.ZoieIndexingStatusAdmin">
+	<bean id="zoie-index-stat-mbean" class="com.linkedin.zoie.mbean.ZoieIndexingStatusAdmin">
 		<constructor-arg ref="indexingSystem" />
 	</bean>
 	
-	<bean id="defaultOptScheduler" class="proj.zoie.api.indexing.DefaultOptimizeScheduler" factory-bean="indexingSystem" factory-method="getOptimizeScheduler" />
+	<bean id="defaultOptScheduler" class="com.linkedin.zoie.api.indexing.DefaultOptimizeScheduler" factory-bean="indexingSystem" factory-method="getOptimizeScheduler" />
 	
-	<bean id="optimize-scheduler-mbean" class="proj.zoie.mbean.ZoieOptimizeSchedulerAdmin">
+	<bean id="optimize-scheduler-mbean" class="com.linkedin.zoie.mbean.ZoieOptimizeSchedulerAdmin">
 		<constructor-arg ref="defaultOptScheduler" />
 	</bean>
 	
 	<alias name="indexingSystem" alias="index-reader-factory"/>
 	<alias name="indexingSystem" alias="consumer"/>
 	
-	<bean id="searchService" class="proj.zoie.example.service.impl.ExampleZoieSearchServiceImpl">
+	<bean id="searchService" class="com.linkedin.zoie.example.service.impl.ExampleZoieSearchServiceImpl">
 		<constructor-arg ref="index-reader-factory"/>
 	</bean>
 </beans>

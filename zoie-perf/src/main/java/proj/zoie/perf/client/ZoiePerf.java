@@ -1,4 +1,4 @@
-package proj.zoie.perf.client;
+package com.linkedin.zoie.perf.client;
 
 import java.io.File;
 import java.nio.charset.Charset;
@@ -28,26 +28,26 @@ import org.mortbay.jetty.nio.SelectChannelConnector;
 import org.mortbay.jetty.servlet.Context;
 import org.mortbay.jetty.servlet.ServletHolder;
 
-import proj.zoie.api.DefaultDirectoryManager;
-import proj.zoie.api.DirectoryManager;
-import proj.zoie.api.DirectoryManager.DIRECTORY_MODE;
-import proj.zoie.api.IndexReaderFactory;
-import proj.zoie.api.LifeCycleCotrolledDataConsumer;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.impl.ZoieMergePolicy;
-import proj.zoie.api.indexing.IndexReaderDecorator;
-import proj.zoie.impl.indexing.DefaultIndexReaderDecorator;
-import proj.zoie.impl.indexing.SimpleReaderCache;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
-import proj.zoie.impl.indexing.luceneNRT.ThrottledLuceneNRTDataConsumer;
-import proj.zoie.perf.indexing.LinedFileDataProvider;
-import proj.zoie.perf.indexing.TweetInterpreter;
-import proj.zoie.perf.servlet.ZoiePerfServlet;
-import proj.zoie.store.LuceneStore;
-import proj.zoie.store.ZoieStore;
-import proj.zoie.store.ZoieStoreConsumer;
-import proj.zoie.store.ZoieStoreSerializer;
+import com.linkedin.zoie.api.DefaultDirectoryManager;
+import com.linkedin.zoie.api.DirectoryManager;
+import com.linkedin.zoie.api.DirectoryManager.DIRECTORY_MODE;
+import com.linkedin.zoie.api.IndexReaderFactory;
+import com.linkedin.zoie.api.LifeCycleCotrolledDataConsumer;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.impl.ZoieMergePolicy;
+import com.linkedin.zoie.api.indexing.IndexReaderDecorator;
+import com.linkedin.zoie.impl.indexing.DefaultIndexReaderDecorator;
+import com.linkedin.zoie.impl.indexing.SimpleReaderCache;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.impl.indexing.luceneNRT.ThrottledLuceneNRTDataConsumer;
+import com.linkedin.zoie.perf.indexing.LinedFileDataProvider;
+import com.linkedin.zoie.perf.indexing.TweetInterpreter;
+import com.linkedin.zoie.perf.servlet.ZoiePerfServlet;
+import com.linkedin.zoie.store.LuceneStore;
+import com.linkedin.zoie.store.ZoieStore;
+import com.linkedin.zoie.store.ZoieStoreConsumer;
+import com.linkedin.zoie.store.ZoieStoreSerializer;
 
 import com.yammer.metrics.Metrics;
 import com.yammer.metrics.core.GaugeMetric;
@@ -217,7 +217,7 @@ public class ZoiePerf {
 			private volatile String version=null;
 			@Override
 			public void consume(
-					Collection<proj.zoie.api.DataConsumer.DataEvent<String>> data)
+					Collection<com.linkedin.zoie.api.DataConsumer.DataEvent<String>> data)
 					throws ZoieException {
 				for (DataEvent<String> datum : data){
 					version = datum.getVersion();

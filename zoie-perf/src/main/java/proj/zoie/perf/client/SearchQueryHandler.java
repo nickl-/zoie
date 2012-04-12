@@ -1,4 +1,4 @@
-package proj.zoie.perf.client;
+package com.linkedin.zoie.perf.client;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.util.Version;
 
-import proj.zoie.api.IndexReaderFactory;
+import com.linkedin.zoie.api.IndexReaderFactory;
 
 public class SearchQueryHandler implements QueryHandler<TopDocs> {
 

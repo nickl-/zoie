@@ -1,8 +1,8 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import java.io.Serializable;
 
-import proj.zoie.api.indexing.AbstractZoieIndexableInterpreter;
+import com.linkedin.zoie.api.indexing.AbstractZoieIndexableInterpreter;
 
 /**
  * Does not support store data.

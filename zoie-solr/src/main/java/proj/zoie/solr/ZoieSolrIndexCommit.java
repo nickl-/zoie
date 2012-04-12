@@ -1,4 +1,4 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import java.io.IOException;
 import java.util.Collection;

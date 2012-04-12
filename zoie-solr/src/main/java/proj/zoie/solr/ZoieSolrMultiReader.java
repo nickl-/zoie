@@ -1,4 +1,4 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.apache.lucene.index.SegmentInfos;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import proj.zoie.api.IndexReaderFactory;
-import proj.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.IndexReaderFactory;
+import com.linkedin.zoie.api.ZoieIndexReader;
 
 public class ZoieSolrMultiReader<T extends IndexReader> extends MultiReader{
 

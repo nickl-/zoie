@@ -1,12 +1,12 @@
-package proj.zoie.test.mock;
+package com.linkedin.zoie.test.mock;
 
 import java.util.Collection;
 import java.util.Comparator;
 
 import org.apache.log4j.Logger;
 
-import proj.zoie.api.DataConsumer;
-import proj.zoie.api.ZoieException;
+import com.linkedin.zoie.api.DataConsumer;
+import com.linkedin.zoie.api.ZoieException;
 
 public class MockDataLoader<D> implements DataConsumer<D> {
 	private static final Logger log = Logger.getLogger(MockDataLoader.class);

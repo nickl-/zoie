@@ -1,4 +1,4 @@
-package proj.zoie.dataprovider.jms;
+package com.linkedin.zoie.dataprovider.jms;
 
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
@@ -29,10 +29,10 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
 
-import proj.zoie.api.DataConsumer;
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.api.ZoieException;
-import proj.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.api.DataConsumer;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TestJMSStreamDataProvider {
@@ -109,7 +109,7 @@ public class TestJMSStreamDataProvider {
 
 			@Override
 			public void consume(
-					Collection<proj.zoie.api.DataConsumer.DataEvent<Object>> data)
+					Collection<com.linkedin.zoie.api.DataConsumer.DataEvent<Object>> data)
 					throws ZoieException {
 				for (DataEvent<Object> e : data) {
 					if (Long.valueOf(e.getVersion()) != v) {
@@ -190,7 +190,7 @@ public class TestJMSStreamDataProvider {
 
 			@Override
 			public void consume(
-					Collection<proj.zoie.api.DataConsumer.DataEvent<Object>> data)
+					Collection<com.linkedin.zoie.api.DataConsumer.DataEvent<Object>> data)
 					throws ZoieException {
 				for (DataEvent<Object> e : data) {
 					if (Long.valueOf(e.getVersion()) != v) {

@@ -7,13 +7,13 @@
 	
 	<import resource="propertyLoader.spring" />
 	
-	<bean id="dataprovider" class="proj.zoie.impl.indexing.FileDataProvider">
+	<bean id="dataprovider" class="com.linkedin.zoie.impl.indexing.FileDataProvider">
 		<constructor-arg value="file:${source.dir}"/>
 		<constructor-arg ref="versionComparator"/>
 		<property name="dataConsumer" ref="consumer" />
 	</bean>
 	
-	<bean id="dataprovider-mbean" class="proj.zoie.mbean.DataProviderAdmin">
+	<bean id="dataprovider-mbean" class="com.linkedin.zoie.mbean.DataProviderAdmin">
 		<constructor-arg ref="dataprovider" />
 	</bean>
 </beans>

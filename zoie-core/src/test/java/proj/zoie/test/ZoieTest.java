@@ -1,4 +1,4 @@
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -40,24 +40,24 @@ import org.apache.lucene.util.Version;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.api.DefaultDirectoryManager;
-import proj.zoie.api.DirectoryManager;
-import proj.zoie.api.DocIDMapper;
-import proj.zoie.api.DocIDMapper.DocIDArray;
-import proj.zoie.api.UIDDocIdSet;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.api.impl.DocIDMapperImpl;
-import proj.zoie.api.impl.InRangeDocIDMapperFactory;
-import proj.zoie.api.indexing.IndexingEventListener;
-import proj.zoie.impl.indexing.AsyncDataConsumer;
-import proj.zoie.impl.indexing.MemoryStreamDataProvider;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
-import proj.zoie.impl.indexing.internal.IndexSignature;
-import proj.zoie.test.data.DataForTests;
-import proj.zoie.test.mock.MockDataLoader;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.DefaultDirectoryManager;
+import com.linkedin.zoie.api.DirectoryManager;
+import com.linkedin.zoie.api.DocIDMapper;
+import com.linkedin.zoie.api.DocIDMapper.DocIDArray;
+import com.linkedin.zoie.api.UIDDocIdSet;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.api.impl.DocIDMapperImpl;
+import com.linkedin.zoie.api.impl.InRangeDocIDMapperFactory;
+import com.linkedin.zoie.api.indexing.IndexingEventListener;
+import com.linkedin.zoie.impl.indexing.AsyncDataConsumer;
+import com.linkedin.zoie.impl.indexing.MemoryStreamDataProvider;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.impl.indexing.internal.IndexSignature;
+import com.linkedin.zoie.test.data.DataForTests;
+import com.linkedin.zoie.test.mock.MockDataLoader;
 
 public class ZoieTest extends ZoieTestCaseBase {
 	static Logger log = Logger.getLogger(ZoieTest.class);

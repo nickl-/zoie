@@ -1,4 +1,4 @@
-package proj.zoie.perf.client;
+package com.linkedin.zoie.perf.client;
 
 import java.util.Comparator;
 

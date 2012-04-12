@@ -1,4 +1,4 @@
-package proj.zoie.solr;
+package com.linkedin.zoie.solr;
 
 import it.unimi.dsi.fastutil.longs.LongArrayList;
 import it.unimi.dsi.fastutil.longs.LongList;
@@ -30,12 +30,12 @@ import org.apache.solr.update.MergeIndexesCommand;
 import org.apache.solr.update.RollbackUpdateCommand;
 import org.apache.solr.update.UpdateHandler;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.api.DocIDMapper;
-import proj.zoie.api.Zoie;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.DocIDMapper;
+import com.linkedin.zoie.api.Zoie;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
 
 public class ZoieUpdateHandler extends UpdateHandler {
 	private static Logger log = Logger.getLogger(ZoieUpdateHandler.class);

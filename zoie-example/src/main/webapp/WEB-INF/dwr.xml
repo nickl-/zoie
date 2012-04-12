@@ -10,6 +10,6 @@
     </create>
     
     
-    <convert converter="bean" match="proj.zoie.service.api.*" />
+    <convert converter="bean" match="com.linkedin.zoie.service.api.*" />
   </allow>
 </dwr>

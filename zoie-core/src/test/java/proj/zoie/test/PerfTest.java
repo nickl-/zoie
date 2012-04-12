@@ -1,4 +1,4 @@
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
 import it.unimi.dsi.fastutil.ints.IntRBTreeSet;

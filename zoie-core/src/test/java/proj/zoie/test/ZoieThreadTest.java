@@ -1,4 +1,4 @@
-package proj.zoie.test;
+package com.linkedin.zoie.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -26,13 +26,13 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.util.Version;
 import org.junit.Test;
 
-import proj.zoie.api.DataConsumer.DataEvent;
-import proj.zoie.api.ZoieException;
-import proj.zoie.api.ZoieIndexReader;
-import proj.zoie.impl.indexing.MemoryStreamDataProvider;
-import proj.zoie.impl.indexing.ZoieConfig;
-import proj.zoie.impl.indexing.ZoieSystem;
-import proj.zoie.test.data.DataForTests;
+import com.linkedin.zoie.api.DataConsumer.DataEvent;
+import com.linkedin.zoie.api.ZoieException;
+import com.linkedin.zoie.api.ZoieIndexReader;
+import com.linkedin.zoie.impl.indexing.MemoryStreamDataProvider;
+import com.linkedin.zoie.impl.indexing.ZoieConfig;
+import com.linkedin.zoie.impl.indexing.ZoieSystem;
+import com.linkedin.zoie.test.data.DataForTests;
 
 public class ZoieThreadTest extends ZoieTestCaseBase {
 	static Logger log = Logger.getLogger(ZoieThreadTest.class);
