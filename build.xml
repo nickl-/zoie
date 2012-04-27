@@ -39,7 +39,7 @@
 	
     <target name="perf-client" depends="dist">
 	   <exec executable="mvn" dir="zoie-perf">
-		   <arg line="-e exec:java proj.zoie.perf.client.ZoieClient" />
+		   <arg line="-e exec:java com.linkedin.zoie.perf.client.ZoieClient" />
 	   </exec>
 	</target>
 	
@@ -51,7 +51,7 @@
 
     <target name="run-cmdline" depends="dist" description="--> run the cmdline console">
 	  <exec executable="mvn">
-	    <arg line="-e exec:java -Dexec.mainClass=proj.zoie.cmdline.JMXClient"/>
+	    <arg line="-e exec:java -Dexec.mainClass=com.linkedin.zoie.cmdline.JMXClient"/>
 	  </exec>
     </target>
 </project>
